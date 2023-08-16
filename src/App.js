@@ -2,17 +2,22 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import  UI from "./component/Ui.jsx";
+import Man from "./component/Man"
 
-console.log(UI);
 
 
 
 function App() {
   return(
-       <Routes>
-       <Route path='/' Component={UI}></Route>
-  
-    </Routes>)
+  <> 
+   <Man/>
+  <Routes>
+
+  <Route path='/' Component={UI}></Route>
+  <Route path='/Man' Component={Man}></Route>
+
+</Routes>
+</>)
 }
 
 

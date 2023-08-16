@@ -16,8 +16,7 @@ function Ui() {
       })
     },[])
     // console.log(first);
-  
-  
+
   // let update =(e)=>{
   // console.log( e.target.value);
   // setfirst(e.target.value)
@@ -26,8 +25,11 @@ function Ui() {
       return(
   <>
   <Main/>
-  <div id='Container'>{first.map((List,index)=>{
-   // console.log(List);
+  <div id='Container'>
+    {first.map((List,index)=>{
+      //  console.log(List);
+     
+   
    // console.log(index);
     // console.log(List.title);
     // console.log(List.id);
@@ -48,18 +50,16 @@ function Ui() {
               </div>
        </div>
       </div>
-  
-   
    </>
    )
   
   })}</div>
   
-  {/* <input onChange={update}/> */}
-  {/* <Main title = 'Mutahir  '/> */}
+ 
   
   </>
       )
 }
 
 export default Ui
+
